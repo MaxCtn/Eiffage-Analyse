@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo"
+                    src="https://media.discordapp.net/attachments/1097452094685986899/1097452261900300358/pngwing.com1.png"
+                    alt="Logo" />
+            </div>
+            <div class="user-icon-container">
+                <img class="user-icon"
+                    src="https://media.discordapp.net/attachments/1097452094685986899/1097458769367158784/kisspng-scalable-vector-graphics-avatar-learning-icon-customer-login-avatar-5a77d335740024.7556966215178022934752.png"
+                    alt="User Icon" />
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="file-section">
+            <h4>Membres actifs</h4>
+            <div class="file-input-container">
+                <label class="input-image members" for="membersFile"></label>
+                <input type="file" id="membersFile" class="input-hidden" accept=".xlsx"
+                    onchange="handleFileInputChange(event, '.input-image.members')">
+
+            </div>
+            <p id="membersFileName" class="file-name"></p>
+            <button id="removeMembers" class="remove-button">Supprimer</button>
+        </div>
+        <div class="file-section">
+            <h4>Factures</h4>
+            <div class="file-input-container">
+                <label class="input-image invoices" for="invoicesFile"></label>
+                <input type="file" id="invoicesFile" class="input-hidden" accept=".xlsx"
+                    onchange="handleFileInputChange(event, '.input-image.invoices')">
+            </div>
+            <p id="invoicesFileName" class="file-name"></p>
+            <button id="removeInvoices" class="remove-button">Supprimer</button>
+        </div>
+    </div>
+    <div class="center-section">
+        <button id="analyze">Analyser</button>
+        <div id="loadingIndicator">Chargement...</div>
+        <button id="download" style="display:none;">Télécharger</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>

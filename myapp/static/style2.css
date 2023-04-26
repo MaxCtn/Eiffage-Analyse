@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* Changez la valeur de margin ici */
+    background-color: grey;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 0;
+    /* Changez la valeur de padding ici */
+    margin: 0;
+    /* Ajoutez cette ligne */
+}
+
+.logo-container {
+    padding-left: 20px;
+}
+
+.user-icon-container {
+    padding-right: 20px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.user-icon {
+    width: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.file-section {
+    width: 30%;
+}
+
+.file-name {
+    margin-top: 10px;
+}
+
+.file-section h4 {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.file-input-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 120px;
+}
+
+
+.input-image.members {
+    background-image: url("https://cdn.discordapp.com/attachments/1097452094685986899/1097498221665853560/ajouter-le-fichier1.png");
+}
+
+.input-image.invoices {
+    background-image: url("https://cdn.discordapp.com/attachments/1097452094685986899/1097498221665853560/ajouter-le-fichier1.png");
+}
+
+.input-image {
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.input-hidden {
+    display: none;
+}
+
+.center-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.remove-button {
+    background-color: #f44336;
+    margin-top: 5px;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f;
+}
+
+#loadingIndicator {
+    display: none;
+    color: #333333;
+    font-style: italic;
+    margin-top: 10px;
+}
